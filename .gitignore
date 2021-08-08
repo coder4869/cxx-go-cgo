@@ -5,3 +5,5 @@ tools/cache
 **build/
 **library/
 **output/
+
+**.pb.go
