@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package cgo_pb;
+option go_package = "pb/resp";
+
+message Vector2f {
+  float x = 1;
+  float y = 2;
+}
+
+message Vector2d {
+  double x = 1;
+  double y = 2;
+}
+
+message ResponseData {
+    int32 user_id   = 1;    // 用户编号
+    bytes name      = 2;    // 用户名称
+    bytes image     = 3;    // 用户头像base64
+}
+
+message ResponseInfo {
+    int32 err_no               = 1;    // 错误编号
+    bytes err_msg              = 2;    // 错误描述
+    repeated ResponseData data = 3;    // 数据列表
+}
