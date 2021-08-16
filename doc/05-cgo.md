@@ -69,7 +69,10 @@ import "C"                                              -- 启用 CGO 能力，�
 - 开启 CGO 能力：在调用 C 库的 go 源码文件中添加 `import "C"` 语句 (参见上面示例)。且 import 和上边的 C 声明之间不能有空格。
 
 #### 具体方法调用
-参见 examples/cgo-base/src/cgo/cgo-user-def.go
+调用示例：
+
+- 目录架构一：examples/cgo-stats
+- 目录架构二：examples/cgo-base
 
 ### 参考资料
 - CGO编程：https://www.cntofu.com/book/73/ch2-cgo/readme.md

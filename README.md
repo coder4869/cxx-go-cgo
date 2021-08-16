@@ -25,6 +25,8 @@ cgo project with protocbuf.
 - protoc 下载地址：https://github.com/protocolbuffers/protobuf/releases
 - protoc-gen-go 插件源码：https://github.com/golang/protobuf 【下载后，在 protoc-gen-go 目录执行编译】
 
+### examples/cgo-stats
+- 参考资料：https://github.com/akhenakh/statgo
 
 ## 参考资料
 ### GO官方资料
