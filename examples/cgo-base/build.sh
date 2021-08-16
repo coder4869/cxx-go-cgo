@@ -17,25 +17,8 @@ function update_cxx_library() {
 
 ################# build_go #################
 src_dir=${script_dir}/src
-bin_name=cgo_base
-
-function init_go_mod() {
-    cd ${src_dir}
-    if [ ! -f "go.mod" ]; then
-        go mod init ${bin_name}
-    fi
-
-    if [ -f "go.mod" ]; then
-       go mod tidy
-    fi
-}
-
 build_dir=${script_dir}/build
-function build_go() {
-    mkdir -p ${build_dir} && rm -rf ${build_dir}/* 
-
-    cd ${src_dir} && make
-}
+bin_name=cgo_base
 
 test_dir=${script_dir}/test/
 function update_and_run_test() {
@@ -53,7 +36,11 @@ function clean() {
 
 # prepare_cmake_toolchains
 update_cxx_library
-init_go_mod
-build_go
+
+# go_cmd.sh init_go_mod ${src_dir} ${bin_name}
+sh ${script_dir}/../../tools/scripts/go_cmd.sh init_go_mod ${src_dir} ${bin_name}
+# go_cmd.sh build_go ${src_dir} ${build_dir}
+sh ${script_dir}/../../tools/scripts/go_cmd.sh build_go ${src_dir} ${build_dir}
+
 update_and_run_test
 clean

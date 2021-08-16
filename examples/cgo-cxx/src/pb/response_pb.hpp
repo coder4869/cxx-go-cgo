@@ -7,18 +7,18 @@
 struct Vector2f {
   float x = 1;
   float y = 2;
-}
+};
 
 struct Vector2d {
   double x = 1;
   double y = 2;
-}
+};
 
 struct ResponseData {
     int         user_id;    // 用户编号
     std::string name;       // 用户名称
     std::string image;      // 用户头像base64
-}
+};
 
 class ResponsePB {
 public:
