@@ -12,7 +12,7 @@ function prepare_cmake_toolchains() {
 
 # generate "pb/*.pb.go"
 function update_protobuf() {
-    sh ${script_dir}/../../tools/protoc.sh
+    sh ${script_dir}/../../tools/protoc/protoc.sh
 }
 
 function update_cxx_library() {
