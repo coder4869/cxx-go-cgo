@@ -28,6 +28,10 @@ cgo project with protocbuf.
 ### examples/cgo-stats
 - 参考资料：https://github.com/akhenakh/statgo
 
+
+### examples/go-web
+- 第三方库：https://www.zhihu.com/question/27370112
+
 ## 参考资料
 ### GO官方资料
 - 官网：https://golang.org/ 包含文档资料，安装包下载，在线编译环境等。

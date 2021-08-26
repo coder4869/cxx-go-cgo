@@ -1,9 +1,5 @@
 package libs
 
-import (
-	"sort"
-)
-
 const (
 	RESULT_SUCCESS			= 0
 	RESULT_PARAM_ERROR		= 1001
