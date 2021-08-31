@@ -4,7 +4,7 @@
 #define BASE_TYPE_HPP
 
 #include <stdio.h>
-#include "macros.h"
+#include "../../cBase/macros.h"
 
 #ifdef __cplusplus
 extern "C" {

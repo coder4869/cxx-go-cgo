@@ -25,7 +25,7 @@ function update_and_run_test() {
     mkdir -p ${test_dir} && rm -rf ${test_dir}/* 
 
     mv ${build_dir}/bin/* ${test_dir}
-    sh ${script_dir}/scripts/lib_process.sh relink ${test_dir}/${bin_name} libCXXBase.dylib
+    sh ${script_dir}/scripts/lib_process.sh relink ${test_dir}/${bin_name} libCBase.dylib
 
     cd ${test_dir} && ./${bin_name}
 }

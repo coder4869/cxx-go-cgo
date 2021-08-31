@@ -4,7 +4,7 @@
 #define BASE_TYPE_H
 
 #include <stdio.h>
-#include "macros.h"
+#include "../macros.h"
 
 #ifdef __cplusplus
 extern "C" {

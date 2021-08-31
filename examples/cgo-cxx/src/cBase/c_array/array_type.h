@@ -1,4 +1,4 @@
-// int float double long bool
+// int float double long
 
 #ifndef ARRAY_TYPE_H
 #define ARRAY_TYPE_H

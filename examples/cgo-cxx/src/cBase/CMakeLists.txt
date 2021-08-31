@@ -1,4 +1,4 @@
-set(LIB_NAME PB)
+set(LIB_NAME CBase)
 
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 file(GLOB_RECURSE src_files

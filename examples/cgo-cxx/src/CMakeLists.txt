@@ -13,5 +13,6 @@ SET_PROPERTY(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS TRUE)
 
 set(CMAKE_CXX_FLAGS "-std=c++14 -O2")
 
-add_subdirectory(base)
+add_subdirectory(cBase)
+add_subdirectory(cxxBase)
 add_subdirectory(pb)

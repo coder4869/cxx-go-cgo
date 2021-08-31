@@ -10,7 +10,9 @@ APP_NAME := cgo_base
 # PATH 环境变量添加 CentOS 6.3 自带的 gcc 版本号
 PATH_OLD := $(PATH)
 export PATH=/opt/compiler/gcc-4.8.2/bin:$(PATH_OLD)
-export LD_LIBRARY_PATH=$(LIB_ROOT)
+# export CFLAGS=$(LIB_ROOT)/include
+# export C_INCLUDE_PATH=$(LIB_ROOT)/include
+# export LD_LIBRARY_PATH=$(LIB_ROOT)/lib
 
 # 初始化命令变量
 GOROOT  := /usr/local/go

@@ -1,4 +1,4 @@
-// int float double long bool
+// int float double long
 
 #include "array_type.h"
 
