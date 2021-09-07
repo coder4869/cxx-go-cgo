@@ -25,7 +25,7 @@ function build_go() {
 
     mkdir -p ${build_dir} && rm -rf ${build_dir}/* 
 
-    cd ${src_dir} && make
+    make -C ${src_dir} # -C go to target dir and run Makefile
 }
 
 if [ "$1" == "init_go_mod" ]; then

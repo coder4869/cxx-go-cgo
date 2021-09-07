@@ -7,10 +7,8 @@ LIB_ROOT := $(HOME_DIR)/library
 
 # 可执行文件名称，可自行修改
 APP_NAME := cgo_base
-# PATH 环境变量添加 CentOS 6.3 自带的 gcc 版本号
-PATH_OLD := $(PATH)
-export PATH=/opt/compiler/gcc-4.8.2/bin:$(PATH_OLD)
-# export CFLAGS=$(LIB_ROOT)/include
+# INC  := -I $(LIB_ROOT)/include
+# LDFLAGS := -L $(LIB_ROOT)/lib -Wl,R$(LIB_ROOT)/lib -lCBase
 # export C_INCLUDE_PATH=$(LIB_ROOT)/include
 # export LD_LIBRARY_PATH=$(LIB_ROOT)/lib
 
