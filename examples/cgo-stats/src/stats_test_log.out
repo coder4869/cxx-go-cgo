@@ -1,6 +1,6 @@
 === RUN   TestHostInfo
 
-HostInfos Time Cost:  0
+HostInfos Time Cost:  1
     stats_test.go:29: OSName:		Darwin
         OSRelease:	20.3.0
         OSVersion:	Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 PST 2021; root:xnu-7195.81.3~1/RELEASE_X86_64
@@ -13,36 +13,36 @@ HostInfos Time Cost:  0
 --- PASS: TestHostInfo (0.00s)
 === RUN   TestCPU
 
-CPUStats Time Cost:  5
-    stats_test.go:47: User:	0.000000
+CPUStats Time Cost:  1
+    stats_test.go:47: User:	42.857143
         Kernel:	0.000000
-        Idle:	100.000000
+        Idle:	57.142857
         IOWait:	0.000000
         Swap:	0.000000
         Nice:	0.000000
-        LoadMin1:	27.178223
-        LoadMin5:	17.696777
-        LoadMin15:	13.196289
+        LoadMin1:	17.036133
+        LoadMin5:	10.394531
+        LoadMin15:	6.907715
         Period:	0s
-        TimeTaken:	2021-08-16 22:07:53.706541 +0800 CST m=+0.027697481
+        TimeTaken:	2021-10-19 10:57:21.901906 +0800 CST m=+0.023864569
         
---- PASS: TestCPU (0.03s)
+--- PASS: TestCPU (0.02s)
 === RUN   TestCPULoad
 
-TestCPULoad Time Cost:  16
-    stats_test.go:91: User:	86.696562
-        Kernel:	4.384654
-        Idle:	8.918784
+TestCPULoad Time Cost:  5
+    stats_test.go:91: User:	84.250000
+        Kernel:	8.000000
+        Idle:	7.750000
         IOWait:	0.000000
         Swap:	0.000000
         Nice:	0.000000
-        LoadMin1:	26.442871
-        LoadMin5:	17.701660
-        LoadMin15:	13.224121
+        LoadMin1:	18.714844
+        LoadMin5:	10.852539
+        LoadMin15:	7.089844
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.724504 +0800 CST m=+5.045603370
+        TimeTaken:	2021-10-19 10:57:26.906321 +0800 CST m=+5.028275099
         
---- PASS: TestCPULoad (5.02s)
+--- PASS: TestCPULoad (5.01s)
 === RUN   TestFSInfos
 
 FSInfos Time Cost:  0
@@ -50,9 +50,9 @@ FSInfos Time Cost:  0
         FSType:				apfs
         MountPoint:			/
         Size:				250685575168
-        Used:				23579471872
-        Free:				227106103296
-        Available:			1529933824
+        Used:				24004751360
+        Free:				226680823808
+        Available:			6131609600
         TotalInodes:		2448101320
         UsedInodes:			568975
         FreeInodes:			2447532345
@@ -74,13 +74,13 @@ FSInfos Time Cost:  0
         FSType:				apfs
         MountPoint:			/System/Volumes/VM
         Size:				250685575168
-        Used:				5373947904
-        Free:				245311627264
-        Available:			1529933824
+        Used:				4297314304
+        Free:				246388260864
+        Available:			6131609600
         TotalInodes:		2448101320
-        UsedInodes:			6
-        FreeInodes:			2448101314
-        AvailableInodes:	2448101314
+        UsedInodes:			5
+        FreeInodes:			2448101315
+        AvailableInodes:	2448101315
         
     stats_test.go:113: DeviceName:			/dev/disk1s2
         FSType:				apfs
@@ -88,7 +88,7 @@ FSInfos Time Cost:  0
         Size:				250685575168
         Used:				365326336
         Free:				250320248832
-        Available:			1529933824
+        Available:			6131609600
         TotalInodes:		2448101320
         UsedInodes:			1473
         FreeInodes:			2448099847
@@ -98,9 +98,9 @@ FSInfos Time Cost:  0
         FSType:				apfs
         MountPoint:			/System/Volumes/Update
         Size:				250685575168
-        Used:				116146176
-        Free:				250569428992
-        Available:			1529933824
+        Used:				117170176
+        Free:				250568404992
+        Available:			6131609600
         TotalInodes:		2448101320
         UsedInodes:			391
         FreeInodes:			2448100929
@@ -110,13 +110,13 @@ FSInfos Time Cost:  0
         FSType:				apfs
         MountPoint:			/System/Volumes/Data
         Size:				250685575168
-        Used:				218971287552
-        Free:				31714287616
-        Available:			1529933824
+        Used:				215019941888
+        Free:				35665633280
+        Available:			6131609600
         TotalInodes:		2448101320
-        UsedInodes:			2291974
-        FreeInodes:			2445809346
-        AvailableInodes:	2445809346
+        UsedInodes:			2340398
+        FreeInodes:			2445760922
+        AvailableInodes:	2445760922
         
     stats_test.go:113: DeviceName:			map auto_home
         FSType:				autofs
@@ -134,30 +134,30 @@ FSInfos Time Cost:  0
         FSType:				apfs
         MountPoint:			/System/Volumes/Update/mnt1
         Size:				250685575168
-        Used:				23579471872
-        Free:				227106103296
-        Available:			1529933824
+        Used:				24004751360
+        Free:				226680823808
+        Available:			6131609600
         TotalInodes:		2448101320
-        UsedInodes:			553759
-        FreeInodes:			2447547561
-        AvailableInodes:	2447547561
+        UsedInodes:			553790
+        FreeInodes:			2447547530
+        AvailableInodes:	2447547530
         
     stats_test.go:113: DeviceName:			/Users/xuexing.zheng/Library/Application Support/Google/Android File Transfer/Android File Transfer Agent.app
         FSType:				nullfs
-        MountPoint:			/private/var/folders/pw/j4tkjprs5c906jm_dqkz8b000000gn/T/AppTranslocation/BB736449-038C-4FC1-B13C-9EA104DF6287
+        MountPoint:			/private/var/folders/pw/j4tkjprs5c906jm_dqkz8b000000gn/T/AppTranslocation/23F14744-F194-4606-B94F-6449CED34B4C
         Size:				250685575168
-        Used:				218020880384
-        Free:				32664694784
-        Available:			6779473920
+        Used:				215472578560
+        Free:				35212996608
+        Available:			8901472256
         TotalInodes:		2448101320
-        UsedInodes:			2264010
-        FreeInodes:			2445837310
-        AvailableInodes:	2445837310
+        UsedInodes:			2346812
+        FreeInodes:			2445754508
+        AvailableInodes:	2445754508
         
 --- PASS: TestFSInfos (0.00s)
 === RUN   TestInterfaceInfos
 
-InteraceInfos Time Cost:  0
+InteraceInfos Time Cost:  1
     stats_test.go:128: Name:	lo0
         Speed:		0
         Factor:		0
@@ -248,48 +248,42 @@ InteraceInfos Time Cost:  0
         Duplex:		Unknown Duplex
         State:		UP
         
-    stats_test.go:128: Name:	utun2
-        Speed:		0
-        Factor:		0
-        Duplex:		Unknown Duplex
-        State:		UP
-        
 --- PASS: TestInterfaceInfos (0.00s)
 === RUN   TestVM
 
 MemStats Time Cost:  0
-    stats_test.go:143: Total:	6809518080
-        Free:		2271842304
-        Used:		4537675776
+    stats_test.go:143: Total:	5851082752
+        Free:		1780015104
+        Used:		4071067648
         Cache:		0
-        SwapTotal:	4294967296
-        SwapUsed:	3309568000
-        SwapFree:	985399296
+        SwapTotal:	3221225472
+        SwapUsed:	1961361408
+        SwapFree:	1259864064
         
 --- PASS: TestVM (0.00s)
 === RUN   TestDisksIO
 
 DiskIOStats Time Cost:  0
     stats_test.go:157: [DiskName:	disk0
-        ReadBytes:	1290240
-        WriteBytes:	69632
+        ReadBytes:	786432
+        WriteBytes:	2314240
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.727814 +0800 CST m=+5.048913394
+        TimeTaken:	2021-10-19 10:57:26.911351 +0800 CST m=+5.033304625
         ]
 --- PASS: TestDisksIO (0.00s)
 === RUN   TestNetIO
 
 NetIOStats Time Cost:  0
     stats_test.go:171: [IntName:	lo0
-        TX:		1024
-        RX:		1024
-        IPackets:	2
-        OPackets:	2
+        TX:		0
+        RX:		0
+        IPackets:	0
+        OPackets:	0
         IErrors:	0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728405 +0800 CST m=+5.049504476
+        TimeTaken:	2021-10-19 10:57:26.911843 +0800 CST m=+5.033796745
          IntName:	gif0
         TX:		0
         RX:		0
@@ -299,7 +293,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728406 +0800 CST m=+5.049505226
+        TimeTaken:	2021-10-19 10:57:26.911851 +0800 CST m=+5.033804631
          IntName:	stf0
         TX:		0
         RX:		0
@@ -309,17 +303,17 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728406 +0800 CST m=+5.049505605
+        TimeTaken:	2021-10-19 10:57:26.911851 +0800 CST m=+5.033805060
          IntName:	en0
         TX:		9216
-        RX:		12288
-        IPackets:	35
-        OPackets:	34
+        RX:		4096
+        IPackets:	17
+        OPackets:	16
         IErrors:	0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728407 +0800 CST m=+5.049505976
+        TimeTaken:	2021-10-19 10:57:26.911852 +0800 CST m=+5.033805498
          IntName:	en4
         TX:		0
         RX:		0
@@ -329,7 +323,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728407 +0800 CST m=+5.049506170
+        TimeTaken:	2021-10-19 10:57:26.911852 +0800 CST m=+5.033805730
          IntName:	en2
         TX:		0
         RX:		0
@@ -339,7 +333,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728407 +0800 CST m=+5.049506501
+        TimeTaken:	2021-10-19 10:57:26.911858 +0800 CST m=+5.033811425
          IntName:	en3
         TX:		0
         RX:		0
@@ -349,7 +343,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728407 +0800 CST m=+5.049506699
+        TimeTaken:	2021-10-19 10:57:26.911858 +0800 CST m=+5.033811655
          IntName:	en1
         TX:		0
         RX:		0
@@ -359,7 +353,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728408 +0800 CST m=+5.049506901
+        TimeTaken:	2021-10-19 10:57:26.911858 +0800 CST m=+5.033811844
          IntName:	bridge0
         TX:		0
         RX:		0
@@ -369,7 +363,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728408 +0800 CST m=+5.049507095
+        TimeTaken:	2021-10-19 10:57:26.911858 +0800 CST m=+5.033812079
          IntName:	p2p0
         TX:		0
         RX:		0
@@ -379,7 +373,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728408 +0800 CST m=+5.049507489
+        TimeTaken:	2021-10-19 10:57:26.911859 +0800 CST m=+5.033812464
          IntName:	awdl0
         TX:		0
         RX:		0
@@ -389,7 +383,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728408 +0800 CST m=+5.049507711
+        TimeTaken:	2021-10-19 10:57:26.911859 +0800 CST m=+5.033812666
          IntName:	llw0
         TX:		0
         RX:		0
@@ -399,7 +393,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728409 +0800 CST m=+5.049507909
+        TimeTaken:	2021-10-19 10:57:26.911859 +0800 CST m=+5.033812852
          IntName:	utun0
         TX:		0
         RX:		0
@@ -409,7 +403,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728422 +0800 CST m=+5.049521154
+        TimeTaken:	2021-10-19 10:57:26.911859 +0800 CST m=+5.033813047
          IntName:	utun1
         TX:		0
         RX:		0
@@ -419,7 +413,7 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728422 +0800 CST m=+5.049521567
+        TimeTaken:	2021-10-19 10:57:26.91186 +0800 CST m=+5.033813237
          IntName:	en5
         TX:		0
         RX:		0
@@ -429,62 +423,52 @@ NetIOStats Time Cost:  0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728422 +0800 CST m=+5.049521764
-         IntName:	utun2
-        TX:		0
-        RX:		1024
-        IPackets:	4
-        OPackets:	2
-        IErrors:	0
-        OErrors:	0
-        Collisions:	0
-        Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.728423 +0800 CST m=+5.049521947
+        TimeTaken:	2021-10-19 10:57:26.91186 +0800 CST m=+5.033813437
         ]
 --- PASS: TestNetIO (0.00s)
 === RUN   TestNetIOTXRX
 
 TestNetIOTXRX Time Cost:  2
     stats_test.go:230: BeforeData: IntName:	lo0
-        TX:		1024
-        RX:		1024
-        IPackets:	2
-        OPackets:	2
+        TX:		0
+        RX:		0
+        IPackets:	0
+        OPackets:	0
         IErrors:	0
         OErrors:	0
         Collisions:	0
         Period:	5s
-        TimeTaken:	2021-08-16 22:07:58.729168 +0800 CST m=+5.050267365
+        TimeTaken:	2021-10-19 10:57:26.912397 +0800 CST m=+5.034350806
         
     stats_test.go:231: After 1MB data: IntName:	lo0
         TX:		1053696
         RX:		1053696
-        IPackets:	109
-        OPackets:	109
+        IPackets:	102
+        OPackets:	102
         IErrors:	0
         OErrors:	0
         Collisions:	0
         Period:	0s
-        TimeTaken:	2021-08-16 22:07:58.73146 +0800 CST m=+5.052559444
+        TimeTaken:	2021-10-19 10:57:26.914098 +0800 CST m=+5.036051546
         
 --- PASS: TestNetIOTXRX (0.00s)
 === RUN   TestProcess
 
-ProcessStats Time Cost:  6
-    stats_test.go:247: Total:		574
-        Running:	573
+ProcessStats Time Cost:  4
+    stats_test.go:247: Total:		450
+        Running:	449
         Sleeping:	0
-        Stopped:	0
-        Zombie:		1
+        Stopped:	1
+        Zombie:		0
         
---- PASS: TestProcess (0.01s)
+--- PASS: TestProcess (0.00s)
 === RUN   TestPages
 
 PageStats Time Cost:  0
     stats_test.go:261: PageIn:	0
         PageOut:	0
         Period:	0s
-        TimeTaken:	2021-08-16 22:07:58.739275 +0800 CST m=+5.060374571
+        TimeTaken:	2021-10-19 10:57:26.920349 +0800 CST m=+5.042302819
         
 --- PASS: TestPages (0.00s)
 === RUN   TestGoRoutineCleanup

@@ -10,12 +10,11 @@ bin_name=go_stats
 function prepare() {
     # lib statgrab
     stats_dir=${script_dir}/../../tools/stats
+    sh ${stats_dir}/statgrab.sh clean
     sh ${stats_dir}/statgrab.sh build
     # install
-    cp -r ${stats_dir}/install/include  ${src_dir}/stats/include/
-    cp -r ${stats_dir}/install/lib      ${src_dir}/stats/lib/
-    # clean
-    sh ${stats_dir}/statgrab.sh clean
+    cp -r ${stats_dir}/install/include/  ${src_dir}/stats/include/
+    cp -r ${stats_dir}/install/lib/      ${src_dir}/stats/lib/
 }
 
 function clean() {

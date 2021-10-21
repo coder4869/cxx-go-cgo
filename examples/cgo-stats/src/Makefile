@@ -1,6 +1,6 @@
 # 配置项目目录
 SRC_DIR  := $(shell pwd)
-export LD_LIBRARY_PATH=$(SRC_DIR)/stats
+export LD_LIBRARY_PATH=$(SRC_DIR)/stats/lib
 
 # 初始化命令变量
 GOROOT  := /usr/local/go
