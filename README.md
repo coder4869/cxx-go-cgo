@@ -25,8 +25,9 @@ cgo project with protocbuf.
 - protoc 下载地址：https://github.com/protocolbuffers/protobuf/releases
 - protoc-gen-go 插件源码：https://github.com/golang/protobuf 【下载后，在 protoc-gen-go 目录执行编译】
 
-### 2.3 examples/cgo-stats
+### 2.3 examples/cgo-stats-host
 - 参考资料：https://github.com/akhenakh/statgo
+- 功能说明：数据对 host 是准确的，取值等同于 top 命令；对 Docker 场景，计算结果不准确
 
 
 ### 2.4 examples/go-web

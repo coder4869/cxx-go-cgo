@@ -71,7 +71,7 @@ import "C"                                              -- 启用 CGO 能力，�
 #### 具体方法调用
 调用示例：
 
-- 目录架构一：examples/cgo-stats
+- 目录架构一：examples/cgo-stats-host
 - 目录架构二：examples/cgo-base
 
 ### 参考资料
