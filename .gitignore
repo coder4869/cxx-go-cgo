@@ -7,3 +7,8 @@ tools/cache
 **output/
 
 **.pb.go
+
+tools/stats/install
+tools/stats/libstatgrab-0.91
+
+examples/cgo-stats-host/*
